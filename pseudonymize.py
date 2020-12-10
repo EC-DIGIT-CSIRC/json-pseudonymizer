@@ -67,7 +67,7 @@ def process_input():
                 print("after: %r" % d)
                 print()
                 print()
-            print(d)
+            print(json.dumps(d))
     except Exception as ex:
         print("could not parse input. Reason: %s" % str(ex))
 
