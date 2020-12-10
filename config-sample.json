@@ -1,0 +1,16 @@
+{ "secret": "ootahdooTah5tai2etaghu5Oo3oKia5n",
+  "fields":  [ 
+	{ "name": "process_guid",
+      "type": "string"
+    },  
+	{ "name": "device_external_ip",
+	  "type": "inet"
+    },
+	{ "name": "local_ip",
+	  "type": "inet"
+    },
+	{ "name": "remote_ip",
+	  "type": "inet"
+    }
+  ]
+}

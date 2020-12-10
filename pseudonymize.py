@@ -26,7 +26,7 @@ def load_config_and_init(filename: str):
         replace_keys = [i["name"] for i in data["fields"]]
     if debug:
         print("replace_keys = %r" % replace_keys)
-    cp = CryptoPAn(data['secret'])
+    cp = CryptoPAn(bytes(data['secret'], 'utf-8'))
     return data
 
 
@@ -67,6 +67,7 @@ def process_input():
                 print("after: %r" % d)
                 print()
                 print()
+            print(d)
     except Exception as ex:
         print("could not parse input. Reason: %s" % str(ex))
 
