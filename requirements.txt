@@ -1,0 +1,2 @@
+gocept.pseudonymize>=2.0.1
+yacryptopan>=1.0.0
